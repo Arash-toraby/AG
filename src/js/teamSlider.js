@@ -3,7 +3,7 @@ const container1 = document.getElementById("container1");
 
 let counter1 = 0;
 let intervalId1;
-const itemWidth1 = window.innerWidth >= 1024 ? 235 : 157; // Assuming each image has a width of 170px including gap
+const itemWidth1 = 235; // Assuming each image has a width of 170px including gap
 
 const startScrolling1 = () => {
   console.log("start");

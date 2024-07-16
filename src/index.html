@@ -10,15 +10,13 @@
     class="container lg:max-w-[1920] mx-auto bg-gradient-to-br from-[#15A097CC] via-[#000] to-[#15A097CC]"
   > -->
   <body
-    class="container lg:max-w-[1920] mx-auto bg-[#191919] overflow-x-hidden"
+    class="container lg:max-w-[1920] mx-auto bg-[#191919] overflow-x-hidden transition-all duration-300"
   >
     <header
-      class="w-full max-w-[393px] lg:max-w-[1920px] flex flex-col lg:items-center lg:justify-center mx-auto lg:pt-[60px] pt-[88px] lg:pb-[151.28px] pb-[47px] relative"
+      class="w-full max-w-[393px] lg:max-w-[1920px] flex flex-col lg:items-center lg:justify-center mx-auto lg:pt-[60px] pt-[88px] lg:pb-[151.28px] pb-[47px]"
     >
-      <div class="radial-header-one"></div>
-      <div class="radial-header-two"></div>
       <nav
-        class="hidden lg:max-w-[592px] lg:w-full lg:bg-[#19191999] lg:flex text-white items-center text-[14px] p-[10px] rounded-[17px] border-[0.5px] border-[#8D8D8D] justify-start gap-[40px] fixed z-10 top-5"
+        class="hidden lg:max-w-[592px] lg:w-full lg:bg-[#19191999] lg:flex z-50 text-white items-center text-[14px] p-[10px] rounded-[17px] border-[0.5px] border-[#8D8D8D] justify-start gap-[40px] fixed z-10 top-5"
       >
         <button
           class="flex w-[134px] h-[32px] items-center justify-center rounded-[8px] border-[0.5px] border-[#8D8D8D] text-[13px] text-white"
@@ -180,9 +178,7 @@
     <main
       class="w-full max-w-[393px] lg:max-w-[1920px] lg:flex lg:flex-col items-center mx-auto lg:space-y-[130px] space-y-[50px]"
     >
-      <section class="flex flex-col items-center relative">
-        <div class="first-section-radial-one"></div>
-
+      <section class="flex flex-col items-center">
         <h2
           class="lg:text-[25px] text-[20px] lg:font-[800] text-white flex items-center gap-[15px] mb-[50px]"
         >
@@ -193,18 +189,12 @@
         </h2>
 
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[20px] gap-y-[30px] justify-items-center"
+          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[20px] gap-y-[30px] justify-items-center pb-20"
         >
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] transition-all duration-1000 lg:p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden p-[20px] justify-between relative group"
+            class="border-[1px] border-[#3A3A3A] lg:p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden p-[20px] justify-between"
           >
-            <div
-              class="lozi-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
-            ></div>
-            <div
-              class="lozi-radial-two opacity-0 group-hover:opacity-100 transition-all duration-1000"
-            ></div>
             <h3 class="lg:text-[20px] text-[18px] text-white font-[700]">
               امکان تسویه از طریق ارز دیجیتال تتر
             </h3>
@@ -215,44 +205,44 @@
               بهره‌مند شوید.
             </p>
             <div
-              class="flex items-center lg:justify-center lg:gap-[55px] lg:overflow-hidden"
+              class="flex items-center lg:justify-center lg:gap-[55px] overflow-hidden"
             >
               <div
-                class="lozi-container relative w-[147px] h-[147px] lg:translate-x-0 translate-x-[25px]"
+                class="lozi-container relative group w-[147px] h-[147px] lg:translate-x-0 translate-x-[25px]"
               >
                 <img
                   src="../public/lozi.png"
-                  class="normal-image absolute top-1 left-0 opacity-100 hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[0]"
+                  class="normal-image absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1]"
                 />
                 <img
                   src="../public/lozi-bright.png"
-                  class="bright-image top-0 left-0 absolute opacity-0 hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1] scale-[1.75]"
+                  class="bright-image top-0 left-0 absolute opacity-0 group-hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0 scale-[1.75]"
                 />
               </div>
 
               <div
-                class="lozi-container relative w-[147px] h-[147px] lg:translate-x-0 -translate-x-[25px]"
+                class="lozi-container relative group w-[147px] h-[147px] lg:translate-x-0 -translate-x-[25px]"
               >
                 <img
                   src="../public/lozi.png"
-                  class="normal-image absolute top-1 left-0 opacity-100 hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0"
+                  class="normal-image absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1]"
                 />
                 <img
                   src="../public/lozi-bright.png"
-                  class="bright-image top-0 left-0 absolute opacity-0 hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1] scale-[1.75]"
+                  class="bright-image top-0 left-0 absolute opacity-0 group-hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0 scale-[1.75]"
                 />
               </div>
 
               <div
-                class="lozi-container relative w-[147px] h-[147px] lg:translate-x-0 -translate-x-[75px]"
+                class="lozi-container relative group w-[147px] h-[147px] lg:translate-x-0 -translate-x-[75px]"
               >
                 <img
                   src="../public/lozi.png"
-                  class="normal-image absolute top-1 left-0 opacity-100 hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[0]"
+                  class="normal-image absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1]"
                 />
                 <img
                   src="../public/lozi-bright.png"
-                  class="bright-image top-0 left-0 absolute opacity-0 hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1] scale-[1.75]"
+                  class="bright-image top-0 left-0 absolute opacity-0 group-hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0 scale-[1.75]"
                 />
               </div>
             </div>
@@ -260,11 +250,8 @@
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] transition-all duration-1000 p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:min-h-[434px] min-h-[427px] lg:h-[434px] h-[427px] max-h-[430px] space-y-[20px] lg:order-2 order-1 relative overflow-hidden group"
+            class="border-[1px] border-[#3A3A3A] p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:min-h-[434px] min-h-[427px] lg:h-[434px] h-[427px] max-h-[430px] space-y-[20px] lg:order-2 order-1"
           >
-            <div
-              class="karte-banki-radial opacity-0 group-hover:opacity-100 -translate-x-[200px] group-hover:-translate-x-0 transition-all duration-1000"
-            ></div>
             <h3 class="lg:text-[20px] text-[18px] text-white font-[700]">
               تسویه حساب ۱۰ روز یکبار
             </h3>
@@ -279,7 +266,7 @@
               class="flex items-center justify-center lg:gap-[55px] relative bottom-0"
             >
               <div
-                class="relative lg:left-[166px] lg:-bottom-5 group lg:group-hover:bottom-0 transition-all duration-1000 lg:block hidden"
+                class="relative lg:left-[166px] lg:-bottom-5 group lg:hover:bottom-0 transition-all duration-1000 lg:block hidden"
               >
                 <img
                   src="../public/karte-banki-gray.png"
@@ -308,12 +295,8 @@
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:min-h-[292px] max-w-[333px] lg:h-[292px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden group transition-all duration-1000 content-start relative"
+            class="border-[1px] border-[#3A3A3A] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:min-h-[292px] max-w-[333px] lg:h-[292px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden group transition-all duration-1000 content-start"
           >
-            <div
-              class="globe-radial opacity-0 group-hover:opacity-100 transition-all duration-1000 hidden lg:block"
-            ></div>
-            <div class="globe-radial lg:hidden"></div>
             <div
               class="relative lg:order-1 lg:justify-self-end lg:min-h-[290px] lg:h-[290px] rotate-[19.202deg]"
             >
@@ -370,7 +353,7 @@
           <div
             id="kiloo-meter"
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] transition-all duration-1000 p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] max-w-[333px] h-[430px] space-y-[20px] lg:order-4 order-5 group relative overflow-hidden"
+            class="border-[1px] border-[#3A3A3A] p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] max-w-[333px] h-[430px] space-y-[20px] lg:order-4 order-5 group"
           >
             <h3 class="lg:text-[20px] text-[18px] text-white font-[700]">
               کارمزد متغیر بنا بر درخواست
@@ -381,12 +364,6 @@
               پرداختی خود را بهینه‌سازی کرده و بهترین نرخ‌ بازار را برای درگاه
               پرداخت دریافت کنید.
             </p>
-            <div
-              class="speed-kilo-meter-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
-            ></div>
-            <div
-              class="speed-kilo-meter-radial-two opacity-0 group-hover:opacity-100 transition-all duration-1000"
-            ></div>
             <div
               dir="ltr"
               class="flex items-center justify-center lg:gap-[55px] relative bottom-0 kilometer-container"
@@ -432,7 +409,7 @@
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] transition-all duration-1000 lg:p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] lg:h-[434px] max-w-[333px] max-h-[430px] h-[434px] space-y-[20px] lg:order-5 order-4 overflow-hidden group"
+            class="border-[1px] border-[#3A3A3A] lg:p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] lg:h-[434px] max-w-[333px] max-h-[430px] h-[434px] space-y-[20px] lg:order-5 order-4 overflow-hidden group"
           >
             <h3
               class="lg:text-[20px] text-[18px] text-white font-[700] px-[20px] lg:px-0 pt-[20px] lg:pt-0"
@@ -447,13 +424,9 @@
               کسب و کار آنلاین خود را راه‌اندازی کنید و مشتریان شما از طریق
               درگاه بین المللی پرداخت خود را انجام دهند.
             </p>
-
             <div
               class="flex items-center justify-center lg:gap-[55px] relative bottom-0"
             >
-              <div
-                class="shabake-radial opacity-0 group-hover:opacity-100 transition-all duration-1000"
-              ></div>
               <img
                 src="../public/white-shabake-radar.png"
                 class="-translate-x-[105px] translate-y-[34px] z-[2] opacity-0 hover:opacity-100 transition-all duration-1000 absolute hidden lg:block"
@@ -508,39 +481,134 @@
           </div>
         </div>
         <!-- in div form dare -->
-        <!-- <div
-          dir="rtl"
-          class="lg:p-[0px] rounded-[24px] lg:max-w-[1212px] py-[20px] px-[30px] lg:py-[27px] lg:px-[40px] lg:w-full lg:max-h-[292px] max-w-[333px] h-full max-h-[274px] lg:col-span-2 flex flex-col lg:flex-row lg:justify-between gap-[50px] lg:gap-[50px] bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373] items-center lg:mt-[110px] mt-[64px]"
-        > -->
-        <div
-          dir="rtl"
-          class="lg:p-[0px] rounded-[24px] lg:max-w-[1212px] py-[20px] px-[30px] lg:py-[27px] lg:px-[40px] lg:w-full lg:max-h-[292px] max-w-[333px] h-full max-h-[274px] lg:col-span-2 flex flex-col lg:flex-row lg:justify-between gap-[50px] lg:gap-[50px] bg-[#3A3A3A] items-center lg:mt-[110px] mt-[64px] overflow-hidden relative"
-        >
-          <div class="first-form-radial-one"></div>
-          <div class="first-form-radial-two"></div>
-          <div class="first-section-radial-three"></div>
-          <div class="first-section-radial-five"></div>
-          <div class="space-y-[10px]">
-            <h2 class="lg:text-[35px] text-[25px] font-[700] text-white z-[2]">
-              هنوز مطمئن نیستید؟
-            </h2>
-            <p
-              class="lg:text-[20px] text-[16px] font-[400] text-[#BEBEBE] z-[2]"
-            >
-              برای دریافت اطلاعات بیشتر و راهنمایی در خصوص انواع پلن های اَدمون،
-              با ما ارتباط بگیرید.
-            </p>
-          </div>
-          <button
-            class="lg:w-[240px] max-w-[292px] max-h-[65px] text-white lg:text-[20px] font-[600] flex items-center justify-center border-[1px] border-[#F8FBFF] hover:bg-white hover:text-[#7ABF4D] rounded-[12px] lg:px-[60px] px-[86px] lg:py-[17px] py-[17px] transition-all duration z-[1]"
+        <div class="relative">
+          <div
+            id="form-line-section-1"
+            dir="rtl"
+            class="lg:p-[0px] relative z-40 rounded-[24px] lg:max-w-[1212px] py-[20px] px-[30px] lg:py-[27px] lg:px-[40px] lg:w-full lg:max-h-[292px] max-w-[333px] h-full max-h-[274px] lg:col-span-2 flex flex-col lg:flex-row lg:justify-between gap-[50px] lg:gap-[50px] bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373] items-center"
           >
-            مشاوره رایگان
-          </button>
+            <div class="space-y-[10px]">
+              <h2 class="lg:text-[35px] text-[25px] font-[700] text-white">
+                هنوز مطمئن نیستید؟
+              </h2>
+              <p class="lg:text-[20px] text-[16px] font-[400] text-[#BEBEBE]">
+                برای دریافت اطلاعات بیشتر و راهنمایی در خصوص انواع پلن های
+                اَدمون، با ما ارتباط بگیرید.
+              </p>
+            </div>
+            <button
+              id="button-start-form-1"
+              class="lg:w-[240px] max-w-[292px] max-h-[65px] text-white lg:text-[20px] font-[600] flex items-center justify-center border-[1px] border-[#F8FBFF] hover:bg-white hover:text-[#7ABF4D] rounded-[12px] lg:px-[60px] px-[86px] lg:py-[17px] py-[17px] transition-all duration"
+            >
+              مشاوره رایگان
+            </button>
+          </div>
+          <div
+            id="form-line-section-2"
+            dir="rtl"
+            class="rounded-[15px] opacity-0 absolute z-30 top-0 w-full p-8 flex gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373]"
+          >
+            <div class="flex-1 space-y-2">
+              <div class="flex gap-2 items-center flex-1">
+                <h3 class="min-w-[110px] text-[#4DA2A8] font-bold">
+                  اطلاعات شخصی
+                </h3>
+                <div class="w-full h-[1px] bg-[#C7C7C7]/50 rounded-sm"></div>
+                <h3 class="min-w-[110px] text-[#4DA2A8] font-bold">
+                  اطلاعات شرکت
+                </h3>
+                <div class="w-full h-[1px] bg-[#C7C7C7]/50 rounded-sm"></div>
+              </div>
+              <div class="flex w-full justify-center gap-4 items-center">
+                <input
+                  id="username-form-1"
+                  name="userName"
+                  class="bg-transparent rounded-lg border-2 flex-1 border-[#C7C7C7]/50 p-3"
+                  placeholder="نام و نام خانوادگی"
+                  type="text"
+                />
+                <input
+                  id="phone-form-1"
+                  name="phoneNumber"
+                  class="bg-transparent rounded-lg border-2 border-[#C7C7C7]/50 p-3"
+                  placeholder="شماره تماس"
+                  type="text"
+                />
+                <input
+                  id="email-form-1"
+                  name="email"
+                  class="bg-transparent rounded-lg border-2 border-[#C7C7C7]/50 p-3"
+                  placeholder="ایمیل"
+                  type="email"
+                />
+              </div>
+            </div>
+            <button
+              id="button-countion-form-1"
+              class="lg:w-[240px] max-w-[292px] max-h-[65px] text-white lg:text-[20px] font-[600] flex items-center justify-center border-[1px] border-[#F8FBFF] hover:bg-white hover:text-[#7ABF4D] rounded-[12px] lg:px-[60px] px-[86px] lg:py-[17px] py-[17px] transition-all duration"
+            >
+              مرحله بعد
+            </button>
+          </div>
+          <div
+            dir="rtl"
+            id="form-line-section-3"
+            class="rounded-[15px] opacity-0 absolute z-20 top-0 w-full p-8 flex gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373]"
+          >
+            <div class="flex-1 space-y-2">
+              <div class="flex gap-2 items-center flex-1">
+                <h3 class="min-w-[110px] text-[#4DA2A8] font-bold">
+                  اطلاعات شخصی
+                </h3>
+                <div class="w-full h-[1px] bg-[#C7C7C7]/50 rounded-sm"></div>
+                <h3 class="min-w-[110px] text-[#4DA2A8] font-bold">
+                  اطلاعات شرکت
+                </h3>
+                <div class="w-full h-[1px] bg-[#C7C7C7]/50 rounded-sm"></div>
+              </div>
+              <div class="flex w-full justify-center gap-4 items-center">
+                <input
+                  id="site-form-1"
+                  name="site"
+                  class="bg-transparent rounded-lg border-2 w-full border-[#C7C7C7]/50 p-3"
+                  placeholder="آدرس وب سایت"
+                  type="text"
+                />
+                <input
+                  id="gategori-form-1"
+                  name="categorie"
+                  class="bg-transparent rounded-lg border-2 w-full border-[#C7C7C7]/50 p-3"
+                  placeholder="صنعت خود را مشخص کنید"
+                  type="text"
+                />
+              </div>
+            </div>
+            <button
+              id="button-sumbit-form-1"
+              class="lg:w-[240px] max-w-[292px] max-h-[65px] text-white lg:text-[17px] font-[600] flex items-center justify-center border-[1px] border-[#F8FBFF] hover:bg-white hover:text-[#7ABF4D] rounded-[12px] lg:px-[60px] px-[86px] lg:py-[17px] py-[17px] transition-all duration"
+            >
+              ارسال درخواست
+            </button>
+          </div>
+          <div
+            dir="rtl"
+            id="form-line-section-4"
+            class="rounded-[15px] opacity-0 absolute z-10 top-0 w-full p-8 flex gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373]"
+          >
+            <div class="flex-1 space-y-5 text-center">
+              <h2 class="text-[#99D7EA] font-bold text-2xl">
+                با تشکر از شما برای انتخاب ما
+              </h2>
+              <p class="text-white text-lg">
+                درخواست شما با موفقیت ثبت شد و تیم ما به زودی با شما ارتباط
+                خواهند گرفت.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="flex flex-col items-center relative">
-        <div class="second-section-radial-one"></div>
+      <section class="flex flex-col items-center">
         <h2
           class="lg:text-[25px] text-[20px] lg:font-[800] text-white flex items-center gap-[15px] mb-[50px]"
         >
@@ -552,9 +620,9 @@
         <div
           class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[20px] gap-y-[30px] justify-items-center"
         >
-          <div
+          <!-- <div
             dir="rtl"
-            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] lg:h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden group relative"
+            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] lg:h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden group"
           >
             <h3
               class="lg:text-[20px] text-[18px] text-white font-[700] px-5 pt-5"
@@ -570,45 +638,68 @@
               ببخشید.
             </p>
             <div
-              class="goldoon-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000 lg:block hidden"
-            ></div>
-            <div class="goldoon-radial-one opacity-100 lg:hidden"></div>
+              class="flex items-center justify-center lg:gap-[55px] grow relative"
+            >
+              <img
+                src="../public/goldoono-kafsh.png"
+                class="absolute opacity-100 group-hover:opacity-110"
+              />
+              <img
+                src="../public/goldoon-animation-first-slide.png"
+                class="absolute opacity-0 group-hover:opacity-100 left-[58px] top-[5px]"
+              />
+              <img
+                src="../public/goldoon-animation-second-slide.png"
+                class="absolute opacity-0 group-hover:opacity-100 left-[58px] top-[5px]"
+              />
+              <img
+                src="../public/goldoon-animation-third-slide.png"
+                class="absolute opacity-0 group-hover:opacity-100 left-[58px] top-[5px]"
+              />
+            </div>
+          </div> -->
+
+          <div
+            dir="rtl"
+            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] lg:h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden group"
+          >
+            <h3
+              class="lg:text-[20px] text-[18px] text-white font-[700] px-5 pt-5"
+            >
+              پشتیبانی از ووکامرس‌ها
+            </h3>
+            <p
+              class="lg:text-[18px] text-[16px] font-[300] text-[#BEBEBE] px-5 lg:pt-[10px]"
+            >
+              درگاه پرداخت ما به طور کامل از ووکامرس‌ها پشتیبانی می‌کند. این
+              ویژگی به شما امکان می‌دهد تا فروشگاه آنلاین خود را به راحتی با
+              درگاه پرداخت ما ادغام کرده و فرآیند پرداخت مشتریان خود را بهبود
+              ببخشید.
+            </p>
             <div
               dir="ltr"
               id="container"
-              class="overflow-hidden lg:translate-x-12 w-[510px] group relative"
+              class="overflow-hidden translate-x-12 w-[510px] group relative"
             >
               <div
-                class="opacity-100 group-hover:hidden absolute top-[10px] right-[5px] translate-x-[190px] lg:translate-x-0"
+                class="opacity-100 group-hover:hidden absolute top-0 right-0"
               >
-                <img src="../public/goldoono-kafsh.png" class="lg:scale-125" />
+                <img src="../public/goldoono-kafsh.png" class="scale-125" />
               </div>
               <div
-                class="flex items-center justify-start lg:gap-5 opacity-0 group-hover:opacity-100 gap-[0px] lg:mx-0"
+                class="flex items-center justify-start gap-5 opacity-0 group-hover:opacity-100"
                 id="wrapper"
               >
-                <img
-                  src="../public/goldon-1.png"
-                  id="item"
-                  class="lg:scale-100 scale-[0.85] lg:mx-0 -mr-5"
-                />
-                <img
-                  src="../public/goldon-2.png"
-                  id="item"
-                  class="lg:scale-100 scale-[0.85] lg:mx-0 -mr-5"
-                />
-                <img
-                  src="../public/goldon-3.png"
-                  id="item"
-                  class="lg:scale-100 scale-[0.85] lg:mx-0 -mr-5"
-                />
+                <img src="../public/goldon-1.png" id="item" />
+                <img src="../public/goldon-2.png" id="item" />
+                <img src="../public/goldon-3.png" id="item" />
               </div>
             </div>
           </div>
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] transition-all duration-1000 lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden relative group"
+            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden"
           >
             <h3
               class="lg:text-[20px] text-[18px] text-white font-[700] px-5 pt-5"
@@ -623,9 +714,6 @@
               تا فرآیندهای مالی و حسابداری خود را بهبود بخشیده و شفافیت مالی
               بیشتری داشته باشید.
             </p>
-            <div
-              class="hesabha-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
-            ></div>
             <div class="flex items-center justify-center lg:gap-[55px] grow">
               <img src="../public/hesab-ha.png" />
             </div>
@@ -633,11 +721,8 @@
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] hover:border-[#475CC7] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:max-h-[292px] lg:h-[292px] max-w-[333px] max-h-[430px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden relative group transition-all duration-1000"
+            class="border-[1px] border-[#3A3A3A] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:max-h-[292px] lg:h-[292px] max-w-[333px] max-h-[430px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden relative group"
           >
-            <div
-              class="dastgah-pose-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
-            ></div>
             <img
               src="../public/zamine-gray-dastgah-pose.png"
               class="lg:order-1 lg:justify-self-end lg:block absolute opacity-100 group-hover:opacity-100 transition-all duration-300 lg:top-[50px] top-[300px]"
@@ -687,90 +772,239 @@
           <h2>ما دوست داریم همه چیز را ساده و آسان کنیم</h2>
         </div>
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[74px] lg:gap-y-[20px] gap-y-[30px] justify-items-center lg:max-w-[1212px]"
+          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[74px] lg:gap-y-[20px] gap-y-[30px] justify-items-center lg:max-w-[1212px] w-full"
         >
-          <div
-            dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[604px] lg:w-full max-w-[333px] lg:h-[576px] h-[493px] lg:flex lg:flex-col lg:order-1 order-2 overflow-hidden bg-gradient-to-b from-[#3A3A3A] to-[#D3DB70] divide-y-[0.5px] lg:px-[60px] pt-[30px] lg:pt-[50px] pb-[20px] lg:py-[50px] px-[21px] lg:justify-between"
-          >
-            <div class="flex lg:ml-[30px] translate-x-4 pb-[20px] lg:pb-0">
-              <img
-                src="../public/personal-profile.png"
-                class="hidden lg:block"
-              />
-              <div>
-                <h3 class="text-[25px] text-white font-[700] px-5 pt-5">
-                  پلن شخصی
-                </h3>
-                <p class="text-[20px] font-[400] text-[#BEBEBE] px-5">
-                  مناسب برای اشخاص حقیقی
-                </p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-[10px] pt-[17px] pb-[24px]">
-              <img src="../public/addade-pelane-shakhsi.png" />
-              <p class="lg:text-[25px] text-[18px] font-[800] text-white">
-                کارمزد ثابت
-              </p>
-            </div>
-
-            <ul
-              class="list-disc pr-[25px] text-white lg:text-[25px] text-[20px] pt-[20px] pb-[40px] lg:flex lg:flex-col lg:gap-[30px]"
-            >
-              <li>حجم هر تراکنش تا 10,000AED</li>
-              <li>امکان ارائه سیستم کسر خودکار</li>
-              <li>ارائه حساب برای انتقال بانکی</li>
-            </ul>
-            <button
-              class="text-[18px] font-[600] text-white border-[0.5px] border-[#D3DB70] rounded-[19px] lg:px-[152px] px-[69px] py-[21px] lg:py-[21px]"
-            >
-              درخواست سرویس
-            </button>
-          </div>
-          <div
-            dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[604px] max-w-[333px] lg:h-[576px] h-[493px] lg:flex lg:flex-col lg:order-1 order-2 overflow-hidden bg-gradient-to-b from-[#3A3A3A] to-[#70C2DB] divide-y-[0.5px] lg:px-[60px] pt-[30px] lg:pt-[50px] pb-[20px] lg:py-[50px] px-[21px] lg:justify-between"
-          >
-            <div class="flex lg:ml-[30px] translate-x-4 pb-[20px] lg:pb-0">
-              <img
-                src="../public/company-profile.png"
-                class="hidden lg:block"
-              />
-              <div>
-                <h3 class="text-[25px] text-white font-[700] px-5 pt-5">
-                  پلن شرکتی
-                </h3>
-                <p class="text-[20px] font-[400] text-[#BEBEBE] px-5">
-                  مناسب برای کسب و کارها
-                </p>
-              </div>
-            </div>
-
+          <div class="relative w-full transition-all duration-200">
             <div
-              class="flex flex-col lg:flex-row lg:items-center gap-[10px] pt-[17px] pb-[24px] lg:text-[25px] text-[18px] font-[800] text-white"
+              dir="rtl"
+              id="form-card-1-section-1"
+              class="p-10 relative z-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#D3DB70] border-2 border-[#47616E] transition-all duration-200"
             >
-              <div class="flex items-center gap-[10px]">
-                <img src="../public/adadde-plane-sherkati.png" />
-                <p>کارمزد</p>
+              <div class="flex lg:ml-[30px] translate-x-4 pb-[20px] lg:pb-0">
+                <img
+                  src="../public/personal-profile.png"
+                  class="hidden lg:block"
+                />
+                <div>
+                  <h3 class="text-[25px] text-white font-[700] px-5 pt-5">
+                    پلن شخصی
+                  </h3>
+                  <p class="text-[20px] font-[400] text-[#BEBEBE] px-5">
+                    مناسب برای اشخاص حقیقی
+                  </p>
+                </div>
               </div>
-              <p class="lg:text-[25px] text-[18px] font-[800] text-white">
-                با هزینه ثابت ۲,000AED در ماه
-              </p>
+              <div>
+                <div
+                  id="parent"
+                  class="flex items-center gap-[10px] pt-[17px] pb-[24px] border-y-2 border-[#47616E] h-[80px]"
+                >
+                  <div class="flex gap-5 absolute" id="number-icon-1">
+                    <img src="../public/addade-pelane-shakhsi.png" />
+                    <p
+                      class="lg:text-[25px] text-[18px] font-[800] text-white"
+                      id="text-1"
+                    >
+                      کارمزد ثابت
+                    </p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div id="step1" class="transition-all duration-200">
+                    <ul
+                      class="list-disc pr-[25px] text-white lg:text-[25px] text-[20px] pt-[20px] pb-[40px] lg:flex lg:flex-col lg:gap-[30px]"
+                    >
+                      <li>حجم هر تراکنش تا 10,000AED</li>
+                      <li>امکان ارائه سیستم کسر خودکار</li>
+                      <li>ارائه حساب برای انتقال بانکی</li>
+                    </ul>
+                  </div>
+                  <div
+                    id="step2"
+                    class="py-5 gap-5 hidden transition-all duration-200"
+                  >
+                    <input
+                      class="rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                      placeholder="نام و نام خانوادگی"
+                      type="text"
+                      name="userName"
+                      id="userName-card-1"
+                    />
+                    <div class="flex gap-4">
+                      <input
+                        type="text"
+                        placeholder="شماره تماس"
+                        class="w-full rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                        name="phoneNumber"
+                        id="phoneNumber-card-1"
+                      />
+                      <input
+                        placeholder="ایمیل"
+                        class="w-full rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                        type="email"
+                        name="email"
+                        id="email-card-1"
+                      />
+                    </div>
+                    <input
+                      placeholder="آدرس وب سایت"
+                      class="rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                      type="text"
+                      name="site"
+                      id="site-card-1"
+                    />
+                    <input
+                      placeholder="صنعت خود را مشخص کنید"
+                      class="rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                      type="text"
+                      name="categorie"
+                      id="categorie-card-1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                id="button-sumbit-card-form"
+                class="text-[18px] font-[600] text-white border-[0.5px] border-[#D3DB70] rounded-[19px] lg:px-[152px] px-[69px] py-[21px] lg:py-[21px]"
+              >
+                درخواست سرویس
+              </button>
             </div>
+            <div
+              dir="rtl"
+              id="form-card-1-section-2"
+              class="grid absolute top-0 w-full z-0 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#D3DB70] text-center border-2 border-[#47616E] transition-all duration-200"
+            >
+              <div style="padding-block: 8rem">
+                <img src="../public/personal-profile.png" class="mx-auto" />
+                <h2 class="text-[#CDE89C] font-bold text-3xl">
+                  با تشکر از شما برای انتخاب ما
+                </h2>
+                <p class="text-white py-5">
+                  درخواست شما با موفقیت ثبت شد و تیم ما به زودی با شما ارتباط
+                  خواهند گرفت.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative w-full">
+            <div>
+              <div
+                dir="rtl"
+                id="form-card-2-section-1"
+                class="grid relative w-full z-20 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#70C2DB] text-center border-2 border-[#47616E] transition-all duration-200"
+              >
+                <div class="flex lg:ml-[30px] translate-x-2 pb-[20px] lg:pb-0">
+                  <img
+                    src="../public/company-profile.png"
+                    class="hidden lg:block"
+                  />
+                  <div>
+                    <h3 class="text-[25px] text-white font-[700] px-5 pt-5">
+                      پلن شرکتی
+                    </h3>
+                    <p class="text-[20px] font-[400] text-[#BEBEBE] px-5">
+                      مناسب برای کسب و کارها
+                    </p>
+                  </div>
+                </div>
 
-            <ul
-              class="list-disc pr-[25px] text-white lg:text-[25px] font-[400] text-[20px] pt-[20px] pb-[40px] lg:flex lg:flex-col lg:gap-[30px]"
-            >
-              <li>حجم هر تراکنش نامحدود</li>
-              <li>امکان ارائه سیستم کسر خودکار</li>
-              <li>ارائه حساب برای انتقال بانکی</li>
-            </ul>
-            <button
-              class="text-[18px] font-[600] text-white border-[0.5px] border-[#68B5CE] rounded-[19px] lg:px-[152px] px-[69px] py-[21px] lg:py-[21px]"
-            >
-              درخواست سرویس
-            </button>
+                <div
+                  id="parent2"
+                  class="h-[80px] flex flex-col lg:flex-row lg:items-center gap-[10px] py-[20px] pb-[24px] lg:text-[25px] text-[18px] border-y-2 border-white font-[800] text-white"
+                >
+                  <div class="flex items-center gap-[10px] absolute" id="main">
+                    <div id="number-icon-2" class="flex gap-2 items-center">
+                      <img src="../public/adadde-plane-sherkati.png" />
+                      <p>کارمزد</p>
+                    </div>
+                    <p
+                      class="lg:text-[23px] text-[18px] font-[800] text-white"
+                      id="text-22"
+                    >
+                      با هزینه ثابت ۲,000AED در ماه
+                    </p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div id="step11" class="transition-all duration-200">
+                    <ul
+                      class="list-disc pr-[25px] text-white lg:text-[25px] font-[400] text-[20px] pt-[20px] pb-[40px] lg:flex lg:flex-col lg:gap-[30px]"
+                    >
+                      <li>حجم هر تراکنش نامحدود</li>
+                      <li>امکان ارائه سیستم کسر خودکار</li>
+                      <li>ارائه حساب برای انتقال بانکی</li>
+                    </ul>
+                  </div>
+                  <div
+                    id="step22"
+                    class="py-5 gap-5 hidden transition-all duration-200"
+                  >
+                    <input
+                      class="rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                      placeholder="نام و نام خانوادگی"
+                      type="text"
+                      name="userName"
+                      id="userName-card-2"
+                    />
+                    <div class="flex gap-4">
+                      <input
+                        type="text"
+                        placeholder="شماره تماس"
+                        class="w-full rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                        name="phoneNumber"
+                        id="phoneNumber-card-2"
+                      />
+                      <input
+                        placeholder="ایمیل"
+                        class="w-full rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                        type="email"
+                        name="email"
+                        id="email-card-2"
+                      />
+                    </div>
+                    <input
+                      placeholder="آدرس وب سایت"
+                      class="rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                      type="text"
+                      name="site"
+                      id="site-card-2"
+                    />
+                    <input
+                      placeholder="صنعت خود را مشخص کنید"
+                      class="rounded-xl bg-transparent p-4 border-2 border-gray-400"
+                      type="text"
+                      name="categorie"
+                      id="categorie-card-2"
+                    />
+                  </div>
+                </div>
+                <button
+                  id="button-sumbit-card-form-2"
+                  class="text-[18px] font-[600] text-white border-[0.5px] border-[#68B5CE] rounded-[19px] lg:px-[152px] z-40 relative px-[69px] py-[21px] lg:py-[21px]"
+                >
+                  درخواست سرویس
+                </button>
+              </div>
+              <div class="">
+                <div
+                  dir="rtl"
+                  id="form-card-2-section-2"
+                  class="grid w-full absolute left-0 top-0 z-10 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#70C2DB] text-center border-2 border-[#47616E] transition-all duration-200"
+                >
+                  <div style="padding-block: 8rem" class="relative">
+                    <img src="../public/company-profile.png" class="mx-auto" />
+                    <h2 class="text-[#99D7EA] font-bold text-3xl">
+                      با تشکر از شما برای انتخاب ما
+                    </h2>
+                    <p class="text-white py-5">
+                      درخواست شما با موفقیت ثبت شد و تیم ما به زودی با شما
+                      ارتباط خواهند گرفت.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -840,10 +1074,7 @@
       <section
         class="flex flex-col lg:flex-row gap-[40px] lg:gap-0 items-center overflow-hidden"
       >
-        <div
-          dir="rtl"
-          class="lg:max-w-[612px] space-y-[20px] lg:pr-20 pl-[30px] pr-[30px]"
-        >
+        <div dir="rtl" class="lg:max-w-[612px] space-y-[20px] pr-20">
           <h2 class="lg:text-[25px] text-[20px] font-[800] text-white">
             تیم ما
           </h2>
@@ -855,10 +1086,7 @@
             آژانس ادمون است.
           </p>
         </div>
-        <div
-          id="container1"
-          class="overflow-hidden w-fit translate-x-[40px] lg:translate-x-[0px]"
-        >
+        <div id="container1" class="overflow-hidden w-fit">
           <div id="wrapper1" class="flex items-center gap-[7px]">
             <div
               class="flex flex-col items-center justify-end gap-[5px] relative lg:w-[229px] w-[150px] lg:h-[380px] h-[272px] group"
@@ -912,101 +1140,6 @@
           </span>
         </h2>
         <div
-          class="lg:max-w-[1212px] max-w-[333px] lg:w-full divide-y-[1px] divide-dashed divide-[#424242]"
-        >
-          <div class="qna-item flex flex-col">
-            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-              <button
-                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[785px] gap-[44px]"
-              >
-                <img src="../public/Polygon.png" />
-                <p
-                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
-                >
-                  برای دریافت درگاه باید در کشور خارجی شرکت ثبت کنم ؟
-                </p>
-              </button>
-            </div>
-            <div class="expandable-content self-end">
-              <p class="text-white">abcdefg</p>
-            </div>
-          </div>
-
-          <div class="qna-item flex flex-col">
-            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-              <button
-                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[385px] gap-[40px]"
-              >
-                <img src="../public/Polygon.png" />
-                <p
-                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
-                >
-                  آیا درگاه پرداخت بین المللی برای دریافت و پرداخت درون برنامه
-                  ای در گوگل پی و اپ استور هم کاربرد دارد؟
-                </p>
-              </button>
-            </div>
-            <div class="expandable-content self-end">
-              <p class="text-white">abcdefg</p>
-            </div>
-          </div>
-
-          <div class="qna-item flex flex-col">
-            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-              <button
-                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[40px]"
-              >
-                <img src="../public/Polygon.png" />
-                <p
-                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
-                >
-                  چگونه می توانم بر تراکنش ها و خریدهای انجام شده توسط مشتریانم
-                  نظارت داشته باشم؟
-                </p>
-              </button>
-            </div>
-            <div class="expandable-content self-end">
-              <p class="text-white">abcdefg</p>
-            </div>
-          </div>
-
-          <div class="qna-item flex flex-col">
-            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-              <button
-                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[40px]"
-              >
-                <img src="../public/Polygon.png" />
-                <p
-                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
-                >
-                  آیا امکان کسر از حساب به صورت خودکار وجود دارد ؟
-                </p>
-              </button>
-            </div>
-            <div class="expandable-content self-end">
-              <p class="text-white">abcdefg</p>
-            </div>
-          </div>
-
-          <div class="qna-item flex flex-col">
-            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-              <button
-                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[100px]"
-              >
-                <img src="../public/Polygon.png" />
-                <p
-                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
-                >
-                  برای کش بک ها آیا مقداری کم میکنید؟
-                </p>
-              </button>
-            </div>
-            <div class="expandable-content self-end">
-              <p class="text-white">abcdefg</p>
-            </div>
-          </div>
-        </div>
-        <!-- <div
           class="lg:max-w-[1212px] max-w-[333px] lg:w-full divide-y-[1px] divide-dashed divide-[#424242]"
         >
           <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
@@ -1065,13 +1198,10 @@
               </p>
             </button>
           </div>
-        </div> -->
+        </div>
       </section>
     </main>
-    <footer
-      class="flex flex-col items-center lg:mt-[130px] mt-[105px] relative overflow-hidden"
-    >
-      <div class="footer-radial"></div>
+    <footer class="flex flex-col items-center lg:mt-[130px] mt-[105px]">
       <div
         class="lg:max-w-[1212px] max-w-[333px] w-full border-t-[1px] border-[#424242] flex-col divide-[1px] divide-[#365153] flex"
       >
@@ -1383,6 +1513,9 @@
 
 <script src="./js/imageSlider.js"></script>
 <script src="./js/teamSlider.js"></script>
+<script src="./js/form-line.js"></script>
+<script src="./js/form-card-1.js"></script>
+<script src="./js/from-car-2.js"></script>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -1421,20 +1554,5 @@
     }, observerOptions);
 
     observer.observe(graySolo);
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const qnaItems = document.querySelectorAll(".qna-item");
-
-    qnaItems.forEach((item) => {
-      const button = item.querySelector("button");
-      const expandableContent = item.querySelector(".expandable-content");
-
-      button.addEventListener("click", () => {
-        expandableContent.classList.toggle("open");
-      });
-    });
   });
 </script>
