@@ -1,25 +1,25 @@
 const wrapper = document.getElementById("wrapper");
 const container = document.getElementById("container");
+const ParentContainer = document.getElementById("parent-container");
 
 let counter = 0;
 let intervalId;
-const itemWidth = 208; // Assuming each image has a width of 170px including gap
+const itemWidth = window.innerWidth >= 1024 ? 198 : 168;
 
 const startScrolling = () => {
   console.log("start");
   intervalId = setInterval(() => {
-    wrapper.style.transition = "0.5s ease-in-out all"; // Reduced transition duration
-    counter -= itemWidth; // Move to the left
+    wrapper.style.transition = "0.5s ease-in-out all";
+    counter -= itemWidth;
     wrapper.style.transform = `translateX(${counter}px)`;
 
-    // Append the first child to the end to maintain the infinite loop
     setTimeout(() => {
       wrapper.style.transition = "none";
-      wrapper.appendChild(wrapper.firstElementChild); // Move the first item to the end
-      counter += itemWidth; // Adjust counter back by one item's width
+      wrapper.appendChild(wrapper.firstElementChild);
+      counter += itemWidth;
       wrapper.style.transform = `translateX(${counter}px)`;
-    }, 500); // Match the reduced duration of the transition
-  }, 1000); // Reduced interval time
+    }, 500);
+  }, 1000);
 };
 
 const stopScrolling = () => {
@@ -28,5 +28,60 @@ const stopScrolling = () => {
   wrapper.style.transform = `translateX(${counter}px)`;
 };
 
-container.addEventListener("mouseenter", startScrolling);
-container.addEventListener("mouseleave", stopScrolling);
+ParentContainer.addEventListener("mouseenter", startScrolling);
+ParentContainer.addEventListener("mouseleave", stopScrolling);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const wrapper = document.getElementById("wrapper");
+  const parentContainer = document.getElementById("parent-container");
+  const grayPic = document.querySelector(".goldoon-div");
+
+  let counter = 0;
+  let intervalId;
+  const itemWidth = window.innerWidth >= 1024 ? 198 : 168;
+
+  const startScrolling = () => {
+    console.log("start");
+    intervalId = setInterval(() => {
+      wrapper.style.transition = "0.5s ease-in-out all";
+      counter -= itemWidth;
+      wrapper.style.transform = `translateX(${counter}px)`;
+
+      setTimeout(() => {
+        wrapper.style.transition = "none";
+        wrapper.appendChild(wrapper.firstElementChild);
+        counter += itemWidth;
+        wrapper.style.transform = `translateX(${counter}px)`;
+      }, 500);
+    }, 1000);
+  };
+
+  const stopScrolling = () => {
+    clearInterval(intervalId);
+    wrapper.style.transition = "none";
+    wrapper.style.transform = `translateX(${counter}px)`;
+  };
+
+  if (window.innerWidth < 1024) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            grayPic.style.display = "none";
+            wrapper.style.opacity = 100;
+            startScrolling();
+          } else {
+            grayPic.style.display = "block";
+            wrapper.style.opacity = 0;
+            stopScrolling();
+          }
+        });
+      },
+      {
+        threshold: 0.5, // Adjust as needed
+      }
+    );
+
+    observer.observe(parentContainer);
+  }
+});

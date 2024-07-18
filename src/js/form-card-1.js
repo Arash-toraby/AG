@@ -69,8 +69,8 @@ function changeSteps() {
   textIcon.style.textAlign = condition ? "center" : "start";
   iconNumber.style.display = condition ? "grid" : "flex";
   iconNumber.style.display = condition ? "grid" : "flex";
-  iconNumber.style.top = condition ? "50px" : "170px";
-  iconNumber.style.left = condition ? "50px" : "250px";
+  iconNumber.style.top = condition ? "20px" : "170px";
+  iconNumber.style.left = condition ? "20px" : "250px";
   parentIcon.style.borderBlock = condition ? "none" : "2px solid #47616E";
   parentIcon.style.height = condition ? "0px" : "80px";
 
@@ -78,6 +78,7 @@ function changeSteps() {
 
   setTimeout(() => {
     sections1[0].element.style.display = sectionCount !== 2 ? "grid" : "none";
+    sections1[1].element.style.opacity = sectionCount !== 2 ? 100 : 0;
     sectionCount = 1;
     stepCount = 1;
   }, 3000);

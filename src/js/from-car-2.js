@@ -68,8 +68,8 @@ function changeSteps2() {
   textIcon2.style.fontSize = !condition2 ? "14px" : "18px";
   textIcon2.style.textAlign = !condition2 ? "center" : "start";
   mainElement.style.display = !condition2 ? "grid" : "flex";
-  mainElement.style.top = !condition2 ? "50px" : "170px";
-  mainElement.style.left = !condition2 ? "20px" : "100px";
+  mainElement.style.top = !condition2 ? "30px" : "170px";
+  mainElement.style.left = !condition2 ? "15px" : "100px";
   // mainElement.style.top = !condition2 ? "50px" : "170px";
   // mainElement.style.left = !condition2 ? "20px" : "200px";
   parentIcon2.style.borderBlock = !condition2 ? "none" : "2px solid white";
@@ -80,6 +80,7 @@ function changeSteps2() {
 
   setTimeout(() => {
     sections2[0].element.style.display = sectionCount2 === 2 ? "none" : "grid";
+    sections2[1].element.style.opacity = sectionCount2 === 2 ? 100 : 0;
     sectionCount2 = 1;
     stepCount2 = 1;
   }, 3000);

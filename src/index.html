@@ -10,13 +10,15 @@
     class="container lg:max-w-[1920] mx-auto bg-gradient-to-br from-[#15A097CC] via-[#000] to-[#15A097CC]"
   > -->
   <body
-    class="container lg:max-w-[1920] mx-auto bg-[#191919] overflow-x-hidden transition-all duration-300"
+    class="font-yekanBakh container lg:max-w-[1920] mx-auto bg-[#191919] overflow-x-hidden transition-all duration-300"
   >
     <header
-      class="w-full max-w-[393px] lg:max-w-[1920px] flex flex-col lg:items-center lg:justify-center mx-auto lg:pt-[60px] pt-[88px] lg:pb-[151.28px] pb-[47px]"
+      class="w-full max-w-[393px] lg:max-w-[1920px] flex flex-col lg:items-center lg:justify-center mx-auto lg:pt-[60px] pt-[88px] lg:pb-[151.28px] pb-[47px] relative"
     >
+      <div class="radial-header-one"></div>
+      <div class="radial-header-two"></div>
       <nav
-        class="hidden lg:max-w-[592px] lg:w-full lg:bg-[#19191999] lg:flex z-50 text-white items-center text-[14px] p-[10px] rounded-[17px] border-[0.5px] border-[#8D8D8D] justify-start gap-[40px] fixed z-10 top-5"
+        class="hidden lg:max-w-[592px] lg:w-full lg:bg-[#19191999] lg:flex text-white items-center text-[14px] p-[10px] rounded-[17px] border-[0.5px] border-[#8D8D8D] justify-start gap-[40px] fixed z-10 top-5 backdrop-blur-[3px]"
       >
         <button
           class="flex w-[134px] h-[32px] items-center justify-center rounded-[8px] border-[0.5px] border-[#8D8D8D] text-[13px] text-white"
@@ -179,6 +181,8 @@
       class="w-full max-w-[393px] lg:max-w-[1920px] lg:flex lg:flex-col items-center mx-auto lg:space-y-[130px] space-y-[50px]"
     >
       <section class="flex flex-col items-center">
+        <div class="first-section-radial-one"></div>
+
         <h2
           class="lg:text-[25px] text-[20px] lg:font-[800] text-white flex items-center gap-[15px] mb-[50px]"
         >
@@ -189,12 +193,18 @@
         </h2>
 
         <div
-          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[20px] gap-y-[30px] justify-items-center pb-20"
+          class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[20px] gap-y-[30px] justify-items-center"
         >
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden p-[20px] justify-between"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 lg:p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden p-[20px] justify-between relative group"
           >
+            <div
+              class="lozi-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
+            ></div>
+            <div
+              class="lozi-radial-two opacity-0 group-hover:opacity-100 transition-all duration-1000"
+            ></div>
             <h3 class="lg:text-[20px] text-[18px] text-white font-[700]">
               امکان تسویه از طریق ارز دیجیتال تتر
             </h3>
@@ -205,44 +215,44 @@
               بهره‌مند شوید.
             </p>
             <div
-              class="flex items-center lg:justify-center lg:gap-[55px] overflow-hidden"
+              class="flex items-center lg:justify-center lg:gap-[55px] lg:overflow-hidden"
             >
               <div
-                class="lozi-container relative group w-[147px] h-[147px] lg:translate-x-0 translate-x-[25px]"
+                class="lozi-container relative w-[147px] h-[147px] lg:translate-x-0 translate-x-[25px]"
               >
                 <img
                   src="../public/lozi.png"
-                  class="normal-image absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1]"
+                  class="normal-image absolute top-1 left-0 opacity-100 hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[0]"
                 />
                 <img
                   src="../public/lozi-bright.png"
-                  class="bright-image top-0 left-0 absolute opacity-0 group-hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0 scale-[1.75]"
+                  class="bright-image top-0 left-0 absolute opacity-0 hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1] scale-[1.75]"
                 />
               </div>
 
               <div
-                class="lozi-container relative group w-[147px] h-[147px] lg:translate-x-0 -translate-x-[25px]"
+                class="lozi-container relative w-[147px] h-[147px] lg:translate-x-0 -translate-x-[25px]"
               >
                 <img
                   src="../public/lozi.png"
-                  class="normal-image absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1]"
+                  class="normal-image absolute top-1 left-0 opacity-100 hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0"
                 />
                 <img
                   src="../public/lozi-bright.png"
-                  class="bright-image top-0 left-0 absolute opacity-0 group-hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0 scale-[1.75]"
+                  class="bright-image top-0 left-0 absolute opacity-0 hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1] scale-[1.75]"
                 />
               </div>
 
               <div
-                class="lozi-container relative group w-[147px] h-[147px] lg:translate-x-0 -translate-x-[75px]"
+                class="lozi-container relative w-[147px] h-[147px] lg:translate-x-0 -translate-x-[75px]"
               >
                 <img
                   src="../public/lozi.png"
-                  class="normal-image absolute top-0 left-0 opacity-100 group-hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1]"
+                  class="normal-image absolute top-1 left-0 opacity-100 hover:opacity-0 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[0]"
                 />
                 <img
                   src="../public/lozi-bright.png"
-                  class="bright-image top-0 left-0 absolute opacity-0 group-hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-0 scale-[1.75]"
+                  class="bright-image top-0 left-0 absolute opacity-0 hover:opacity-100 w-[147px] min-w-[147px] h-[147px] duration-1000 transition-all object-cover z-[1] scale-[1.75]"
                 />
               </div>
             </div>
@@ -250,8 +260,11 @@
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:min-h-[434px] min-h-[427px] lg:h-[434px] h-[427px] max-h-[430px] space-y-[20px] lg:order-2 order-1"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 p-[20px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:min-h-[434px] min-h-[427px] lg:h-[434px] h-[427px] max-h-[430px] space-y-[20px] lg:order-2 order-1 relative overflow-hidden group"
           >
+            <div
+              class="karte-banki-radial opacity-0 group-hover:opacity-100 -translate-x-[200px] group-hover:-translate-x-0 transition-all duration-1000"
+            ></div>
             <h3 class="lg:text-[20px] text-[18px] text-white font-[700]">
               تسویه حساب ۱۰ روز یکبار
             </h3>
@@ -266,7 +279,7 @@
               class="flex items-center justify-center lg:gap-[55px] relative bottom-0"
             >
               <div
-                class="relative lg:left-[166px] lg:-bottom-5 group lg:hover:bottom-0 transition-all duration-1000 lg:block hidden"
+                class="relative lg:left-[166px] lg:-bottom-[40px] group lg:group-hover:bottom-0 transition-all duration-1000 lg:block hidden"
               >
                 <img
                   src="../public/karte-banki-gray.png"
@@ -274,7 +287,7 @@
                 />
 
                 <div
-                  class="lg:block hidden lg:min-w-[0px] lg:w-[0px] lg:min-h-[188px] lg:h-[188px] absolute group-hover:lg:min-w-[337px] z-[1] group-hover:lg:w-[337px] transition-all duration-1000"
+                  class="lg:block hidden lg:min-w-[337px] lg:w-[337px] lg:min-h-[188px] lg:h-[188px] absolute opacity-0 group-hover:opacity-100 z-[1] group-hover:w-[337px] transition-all duration-1000 translate-x-[380px] group-hover:-translate-x-[0px]"
                 >
                   <img
                     src="../public/karte-banki-blue.png"
@@ -294,9 +307,46 @@
           </div>
 
           <div
+            id="locations-parent"
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:min-h-[292px] max-w-[333px] lg:h-[292px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden group transition-all duration-1000 content-start"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:min-h-[292px] max-w-[333px] lg:h-[292px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden group transition-all duration-1000 content-start relative"
           >
+            <img
+              src="../public/location-2000.png"
+              class="absolute lg:top-[60px] top-[280px] left-[30px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-700.png"
+              class="absolute lg:top-[60px] top-[280px] left-[140px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-1500.png"
+              class="absolute lg:top-[80px] top-[300px] left-[200px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-400.png"
+              class="absolute lg:top-[135px] top-[370px] lg:left-[300px] left-[250px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-900.png"
+              class="absolute lg:top-[210px] top-[390px] lg:left-[30px] left-[30px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-900-2.png"
+              class="absolute lg:top-[190px] top-[360px] lg:left-[130px] left-[130px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-2500.png"
+              class="absolute lg:top-[200px] top-[330px] lg:left-[230px] left-[50px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <img
+              src="../public/location-800.png"
+              class="absolute lg:top-[170px] top-[380px] lg:left-[330px] left-[130px] z-[2] opacity-0 group-hover:opacity-100"
+            />
+            <div
+              class="globe-radial opacity-0 group-hover:opacity-100 transition-all duration-1000 hidden lg:block"
+            ></div>
+            <div class="globe-radial lg:hidden"></div>
             <div
               class="relative lg:order-1 lg:justify-self-end lg:min-h-[290px] lg:h-[290px] rotate-[19.202deg]"
             >
@@ -353,7 +403,7 @@
           <div
             id="kiloo-meter"
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] max-w-[333px] h-[430px] space-y-[20px] lg:order-4 order-5 group"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] max-w-[333px] h-[430px] space-y-[20px] lg:order-4 order-5 group relative overflow-hidden"
           >
             <h3 class="lg:text-[20px] text-[18px] text-white font-[700]">
               کارمزد متغیر بنا بر درخواست
@@ -364,6 +414,12 @@
               پرداختی خود را بهینه‌سازی کرده و بهترین نرخ‌ بازار را برای درگاه
               پرداخت دریافت کنید.
             </p>
+            <div
+              class="speed-kilo-meter-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
+            ></div>
+            <div
+              class="speed-kilo-meter-radial-two opacity-0 group-hover:opacity-100 transition-all duration-1000"
+            ></div>
             <div
               dir="ltr"
               class="flex items-center justify-center lg:gap-[55px] relative bottom-0 kilometer-container"
@@ -409,7 +465,7 @@
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] lg:h-[434px] max-w-[333px] max-h-[430px] h-[434px] space-y-[20px] lg:order-5 order-4 overflow-hidden group"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 lg:p-[20px] rounded-[30px] lg:max-w-[594px] lg:max-h-[434px] lg:h-[434px] max-w-[333px] max-h-[430px] h-[434px] space-y-[20px] lg:order-5 order-4 overflow-hidden group"
           >
             <h3
               class="lg:text-[20px] text-[18px] text-white font-[700] px-[20px] lg:px-0 pt-[20px] lg:pt-0"
@@ -424,9 +480,13 @@
               کسب و کار آنلاین خود را راه‌اندازی کنید و مشتریان شما از طریق
               درگاه بین المللی پرداخت خود را انجام دهند.
             </p>
+
             <div
               class="flex items-center justify-center lg:gap-[55px] relative bottom-0"
             >
+              <div
+                class="shabake-radial opacity-0 group-hover:opacity-100 transition-all duration-1000"
+              ></div>
               <img
                 src="../public/white-shabake-radar.png"
                 class="-translate-x-[105px] translate-y-[34px] z-[2] opacity-0 hover:opacity-100 transition-all duration-1000 absolute hidden lg:block"
@@ -481,12 +541,16 @@
           </div>
         </div>
         <!-- in div form dare -->
-        <div class="relative">
+        <div class="relative mt-[130px]">
           <div
             id="form-line-section-1"
             dir="rtl"
-            class="lg:p-[0px] relative z-40 rounded-[24px] lg:max-w-[1212px] py-[20px] px-[30px] lg:py-[27px] lg:px-[40px] lg:w-full lg:max-h-[292px] max-w-[333px] h-full max-h-[274px] lg:col-span-2 flex flex-col lg:flex-row lg:justify-between gap-[50px] lg:gap-[50px] bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373] items-center"
+            class="lg:p-[0px] relative z-40 rounded-[24px] lg:max-w-[1212px] lg:w-[1212px] py-[20px] px-[30px] lg:py-[27px] lg:px-[40px] lg:max-h-[292px] max-w-[333px] h-full max-h-[274px] lg:col-span-2 flex flex-col lg:flex-row lg:justify-between gap-[50px] lg:gap-[50px] items-center overflow-hidden"
           >
+            <div class="first-form-radial-one"></div>
+            <div class="first-form-radial-two"></div>
+            <div class="first-section-radial-three"></div>
+            <div class="first-section-radial-five"></div>
             <div class="space-y-[10px]">
               <h2 class="lg:text-[35px] text-[25px] font-[700] text-white">
                 هنوز مطمئن نیستید؟
@@ -506,10 +570,10 @@
           <div
             id="form-line-section-2"
             dir="rtl"
-            class="rounded-[15px] opacity-0 absolute z-30 top-0 w-full p-8 flex gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373]"
+            class="rounded-[15px] opacity-0 absolute z-30 top-0 w-full p-8 flex lg:flex-row flex-col gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373] lg:-translate-y-0 -translate-y-[120px]"
           >
             <div class="flex-1 space-y-2">
-              <div class="flex gap-2 items-center flex-1">
+              <div class="flex lg:flex-row flex-col gap-2 items-center flex-1">
                 <h3 class="min-w-[110px] text-[#4DA2A8] font-bold">
                   اطلاعات شخصی
                 </h3>
@@ -519,7 +583,9 @@
                 </h3>
                 <div class="w-full h-[1px] bg-[#C7C7C7]/50 rounded-sm"></div>
               </div>
-              <div class="flex w-full justify-center gap-4 items-center">
+              <div
+                class="flex lg:flex-row flex-col w-full justify-center gap-4 items-center"
+              >
                 <input
                   id="username-form-1"
                   name="userName"
@@ -553,9 +619,9 @@
           <div
             dir="rtl"
             id="form-line-section-3"
-            class="rounded-[15px] opacity-0 absolute z-20 top-0 w-full p-8 flex gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373]"
+            class="rounded-[15px] opacity-0 absolute z-20 top-0 w-full p-8 flex lg:flex-row flex-col gap-10 items-center bg-gradient-to-br from-[#FFCF27] via-[#15A097CC] to-[#2D88F373] lg:-translate-y-0 -translate-y-[30px]"
           >
-            <div class="flex-1 space-y-2">
+            <div class="flex-1 space-y-2 h-[300px] lg:h-[100px]">
               <div class="flex gap-2 items-center flex-1">
                 <h3 class="min-w-[110px] text-[#4DA2A8] font-bold">
                   اطلاعات شخصی
@@ -566,7 +632,9 @@
                 </h3>
                 <div class="w-full h-[1px] bg-[#C7C7C7]/50 rounded-sm"></div>
               </div>
-              <div class="flex w-full justify-center gap-4 items-center">
+              <div
+                class="flex lg:flex-row flex-col w-full justify-center gap-4 items-center"
+              >
                 <input
                   id="site-form-1"
                   name="site"
@@ -609,6 +677,7 @@
       </section>
 
       <section class="flex flex-col items-center">
+        <div class="second-section-radial-one"></div>
         <h2
           class="lg:text-[25px] text-[20px] lg:font-[800] text-white flex items-center gap-[15px] mb-[50px]"
         >
@@ -620,9 +689,10 @@
         <div
           class="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-[24px] lg:gap-y-[20px] gap-y-[30px] justify-items-center"
         >
-          <!-- <div
+          <div
+            id="parent-container"
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] lg:h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden group"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] lg:h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden group relative"
           >
             <h3
               class="lg:text-[20px] text-[18px] text-white font-[700] px-5 pt-5"
@@ -638,68 +708,49 @@
               ببخشید.
             </p>
             <div
-              class="flex items-center justify-center lg:gap-[55px] grow relative"
-            >
-              <img
-                src="../public/goldoono-kafsh.png"
-                class="absolute opacity-100 group-hover:opacity-110"
-              />
-              <img
-                src="../public/goldoon-animation-first-slide.png"
-                class="absolute opacity-0 group-hover:opacity-100 left-[58px] top-[5px]"
-              />
-              <img
-                src="../public/goldoon-animation-second-slide.png"
-                class="absolute opacity-0 group-hover:opacity-100 left-[58px] top-[5px]"
-              />
-              <img
-                src="../public/goldoon-animation-third-slide.png"
-                class="absolute opacity-0 group-hover:opacity-100 left-[58px] top-[5px]"
-              />
-            </div>
-          </div> -->
-
-          <div
-            dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] lg:h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden group"
-          >
-            <h3
-              class="lg:text-[20px] text-[18px] text-white font-[700] px-5 pt-5"
-            >
-              پشتیبانی از ووکامرس‌ها
-            </h3>
-            <p
-              class="lg:text-[18px] text-[16px] font-[300] text-[#BEBEBE] px-5 lg:pt-[10px]"
-            >
-              درگاه پرداخت ما به طور کامل از ووکامرس‌ها پشتیبانی می‌کند. این
-              ویژگی به شما امکان می‌دهد تا فروشگاه آنلاین خود را به راحتی با
-              درگاه پرداخت ما ادغام کرده و فرآیند پرداخت مشتریان خود را بهبود
-              ببخشید.
-            </p>
+              class="goldoon-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000 lg:block hidden"
+            ></div>
+            <div class="goldoon-radial-one opacity-100 lg:hidden"></div>
             <div
               dir="ltr"
               id="container"
-              class="overflow-hidden translate-x-12 w-[510px] group relative"
+              class="lg:-translate-x-[0px] w-[570px] group relative"
             >
               <div
-                class="opacity-100 group-hover:hidden absolute top-0 right-0"
+                id="gray-pic"
+                class="goldoon-div opacity-100 group-hover:lg:hidden absolute top-[10px] right-[5px] translate-x-[190px] lg:-translate-x-[42px]"
               >
-                <img src="../public/goldoono-kafsh.png" class="scale-125" />
+                <img
+                  src="../public/goldoono-kafsh.png"
+                  class="lg:scale-[1.1] scale-[0.85] -translate-y-[20px]"
+                />
               </div>
               <div
-                class="flex items-center justify-start gap-5 opacity-0 group-hover:opacity-100"
+                class="goldoon-rangi-div flex items-center justify-start lg:gap-2 opacity-0 group-hover:lg:opacity-100 lg:translate-x-0 gap-[0px] lg:mx-0 ml-[260px]"
                 id="wrapper"
               >
-                <img src="../public/goldon-1.png" id="item" />
-                <img src="../public/goldon-2.png" id="item" />
-                <img src="../public/goldon-3.png" id="item" />
+                <img
+                  src="../public/goldon-1.png"
+                  id="item"
+                  class="lg:scale-100 scale-[0.85] lg:mx-0 -mr-5"
+                />
+                <img
+                  src="../public/goldon-2.png"
+                  id="item"
+                  class="lg:scale-100 scale-[0.85] lg:mx-0 -mr-5"
+                />
+                <img
+                  src="../public/goldon-3.png"
+                  id="item"
+                  class="lg:scale-100 scale-[0.85] lg:mx-0 -mr-5"
+                />
               </div>
             </div>
           </div>
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] transition-all duration-1000 lg:p-[0px] rounded-[30px] lg:max-w-[594px] max-w-[333px] lg:max-h-[434px] max-h-[430px] h-[430px] lg:flex lg:flex-col space-y-[20px] lg:order-1 order-2 overflow-hidden relative group"
           >
             <h3
               class="lg:text-[20px] text-[18px] text-white font-[700] px-5 pt-5"
@@ -714,22 +765,41 @@
               تا فرآیندهای مالی و حسابداری خود را بهبود بخشیده و شفافیت مالی
               بیشتری داشته باشید.
             </p>
-            <div class="flex items-center justify-center lg:gap-[55px] grow">
-              <img src="../public/hesab-ha.png" />
+            <div
+              class="hesabha-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
+            ></div>
+            <div
+              class="flex items-center justify-center lg:gap-[55px] grow relative"
+            >
+              <img
+                src="../public/hesab-ha.png"
+                class="opacity-100 group-hover:opacity-0 absolute left-[30px] lg:translate-x-[10px] -translate-x-[30px] lg:-translate-y-[10px] translate-y-[80px] transition-all duration-300"
+              />
+              <img
+                src="../public/hesab-ha-rangi.png"
+                class="absolute opacity-0 group-hover:opacity-100 top-[0px] transition-all duration-300 hidden lg:block"
+              />
+              <img
+                src="../public/hesab-ha-rangi.png"
+                class="absolute opacity-100 z-[3] top-[0px] transition-all duration-300 lg:hidden"
+              />
             </div>
           </div>
 
           <div
             dir="rtl"
-            class="border-[1px] border-[#3A3A3A] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:max-h-[292px] lg:h-[292px] max-w-[333px] max-h-[430px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden relative group"
+            class="border-[1px] lg:border-[#3A3A3A] border-[#475CC7] lg:hover:border-[#475CC7] lg:pr-[20px] lg:p-0 rounded-[30px] lg:max-w-[1212px] lg:max-h-[292px] lg:h-[292px] max-w-[333px] max-h-[430px] h-[430px] lg:col-span-2 grid lg:grid-cols-2 order-3 overflow-hidden relative group transition-all duration-1000"
           >
+            <div
+              class="dastgah-pose-radial-one opacity-0 group-hover:opacity-100 transition-all duration-1000"
+            ></div>
             <img
               src="../public/zamine-gray-dastgah-pose.png"
               class="lg:order-1 lg:justify-self-end lg:block absolute opacity-100 group-hover:opacity-100 transition-all duration-300 lg:top-[50px] top-[300px]"
             />
             <img
               src="../public/dastgah-pose-gray-solo.png"
-              class="lg:order-1 lg:justify-self-end lg:block absolute opacity-100 group-hover:opacity-0 lg:transition-all lg:top-[60px] top-[230px] lg:left-[175px] left-[45px] group-hover:-translate-y-[20px] scale-[0.73] lg:scale-100 group-hover:lg:scale-[1.09] group-hover:lg:translate-x-[12px] z-[1] transition-transform"
+              class="lg:order-1 lg:justify-self-end lg:block absolute opacity-100 group-hover:opacity-0 lg:transition-all duration-300 lg:top-[60px] top-[230px] lg:left-[175px] left-[45px] group-hover:-translate-y-[20px] scale-[0.73] lg:scale-100 group-hover:lg:scale-[1.09] group-hover:lg:translate-x-[12px] z-[1] transition-transform"
             />
 
             <img
@@ -738,7 +808,7 @@
             />
             <img
               src="../public/dastgah-pose-zarde-solo.png"
-              class="lg:order-1 lg:justify-self-end lg:block absolute opacity-0 group-hover:opacity-100 transition-all lg:top-[35px] top-[215px] lg:left-[167px] left-[40px] z-[2] scale-[0.73] lg:scale-[0.91] group-hover:lg:scale-110"
+              class="lg:order-1 lg:justify-self-end lg:block absolute opacity-0 group-hover:opacity-100 transition-all duration-300 lg:top-[35px] top-[215px] lg:left-[167px] left-[40px] z-[2] scale-[0.73] lg:scale-[0.91] group-hover:lg:scale-110"
             />
 
             <div class="space-y-[20px] lg:pt-[20px]">
@@ -778,14 +848,15 @@
             <div
               dir="rtl"
               id="form-card-1-section-1"
-              class="p-10 relative z-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#D3DB70] border-2 border-[#47616E] transition-all duration-200"
+              class="p-10 relative z-10 rounded-3xl max-w-[331px] lg:max-w-[601px] border-2 border-[#47616E] transition-all duration-200 overflow-hidden mx-auto"
             >
+              <div class="left-form-radial"></div>
               <div class="flex lg:ml-[30px] translate-x-4 pb-[20px] lg:pb-0">
                 <img
                   src="../public/personal-profile.png"
                   class="hidden lg:block"
                 />
-                <div>
+                <div class="lg:-mr-[10px]">
                   <h3 class="text-[25px] text-white font-[700] px-5 pt-5">
                     پلن شخصی
                   </h3>
@@ -800,7 +871,10 @@
                   class="flex items-center gap-[10px] pt-[17px] pb-[24px] border-y-2 border-[#47616E] h-[80px]"
                 >
                   <div class="flex gap-5 absolute" id="number-icon-1">
-                    <img src="../public/addade-pelane-shakhsi.png" />
+                    <img
+                      src="../public/addade-pelane-shakhsi.png"
+                      class="mr-[30px] lg:mr-0"
+                    />
                     <p
                       class="lg:text-[25px] text-[18px] font-[800] text-white"
                       id="text-1"
@@ -865,7 +939,7 @@
               </div>
               <button
                 id="button-sumbit-card-form"
-                class="text-[18px] font-[600] text-white border-[0.5px] border-[#D3DB70] rounded-[19px] lg:px-[152px] px-[69px] py-[21px] lg:py-[21px]"
+                class="left-form-button text-[16px] font-[600] text-white border-[0.5px] border-[#D3DB70] rounded-[19px] lg:px-[152px] px-[69px] py-[21px] lg:py-[21px]"
               >
                 درخواست سرویس
               </button>
@@ -873,7 +947,7 @@
             <div
               dir="rtl"
               id="form-card-1-section-2"
-              class="grid absolute top-0 w-full z-0 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#D3DB70] text-center border-2 border-[#47616E] transition-all duration-200"
+              class="grid absolute top-0 w-full z-0 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#D3DB70] text-center border-2 border-[#47616E] transition-all duration-200 opacity-0"
             >
               <div style="padding-block: 8rem">
                 <img src="../public/personal-profile.png" class="mx-auto" />
@@ -892,14 +966,15 @@
               <div
                 dir="rtl"
                 id="form-card-2-section-1"
-                class="grid relative w-full z-20 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#70C2DB] text-center border-2 border-[#47616E] transition-all duration-200"
+                class="grid relative w-full z-20 justify-center max-w-[331px] lg:max-w-[601px] items-center p-10 rounded-3xl text-center border-2 border-[#47616E] transition-all duration-200 overflow-hidden mx-auto"
               >
+                <div class="right-form-radial"></div>
                 <div class="flex lg:ml-[30px] translate-x-2 pb-[20px] lg:pb-0">
                   <img
                     src="../public/company-profile.png"
                     class="hidden lg:block"
                   />
-                  <div>
+                  <div class="text-right lg:-mr-[25px]">
                     <h3 class="text-[25px] text-white font-[700] px-5 pt-5">
                       پلن شرکتی
                     </h3>
@@ -919,7 +994,7 @@
                       <p>کارمزد</p>
                     </div>
                     <p
-                      class="lg:text-[23px] text-[18px] font-[800] text-white"
+                      class="lg:text-[23px] text-[14px] font-[800] text-white"
                       id="text-22"
                     >
                       با هزینه ثابت ۲,000AED در ماه
@@ -929,7 +1004,7 @@
                 <div class="relative">
                   <div id="step11" class="transition-all duration-200">
                     <ul
-                      class="list-disc pr-[25px] text-white lg:text-[25px] font-[400] text-[20px] pt-[20px] pb-[40px] lg:flex lg:flex-col lg:gap-[30px]"
+                      class="list-disc pr-[25px] text-white lg:text-[25px] font-[400] text-[20px] pt-[20px] pb-[40px] lg:flex lg:flex-col lg:gap-[30px] text-right"
                     >
                       <li>حجم هر تراکنش نامحدود</li>
                       <li>امکان ارائه سیستم کسر خودکار</li>
@@ -981,7 +1056,7 @@
                 </div>
                 <button
                   id="button-sumbit-card-form-2"
-                  class="text-[18px] font-[600] text-white border-[0.5px] border-[#68B5CE] rounded-[19px] lg:px-[152px] z-40 relative px-[69px] py-[21px] lg:py-[21px]"
+                  class="right-form-button text-[16px] font-[600] text-white border-[0.5px] border-[#68B5CE] rounded-[19px] lg:px-[152px] z-40 relative px-[69px] py-[21px] lg:py-[21px]"
                 >
                   درخواست سرویس
                 </button>
@@ -990,7 +1065,7 @@
                 <div
                   dir="rtl"
                   id="form-card-2-section-2"
-                  class="grid w-full absolute left-0 top-0 z-10 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#70C2DB] text-center border-2 border-[#47616E] transition-all duration-200"
+                  class="grid w-full absolute left-0 top-0 z-10 justify-center items-center p-10 rounded-3xl bg-gradient-to-b from-[#3A3A3A] to-[#70C2DB] text-center border-2 border-[#47616E] transition-all duration-200 opacity-0"
                 >
                   <div style="padding-block: 8rem" class="relative">
                     <img src="../public/company-profile.png" class="mx-auto" />
@@ -1011,7 +1086,7 @@
 
       <section class="flex items-center justify-center">
         <div
-          class="flex relative items-center lg:max-w-[1264px] h-[1206px] lg:p-[25px] lg:bg-[#191919]"
+          class="flex relative items-center lg:max-w-[1264px] lg:h-[746px] h-[1117px] lg:p-[25px] lg:bg-[#191919]"
         >
           <!-- <div
           class="flex items-center lg:max-w-[1264px] lg:p-[25px] lg:bg-black ]"
@@ -1074,7 +1149,11 @@
       <section
         class="flex flex-col lg:flex-row gap-[40px] lg:gap-0 items-center overflow-hidden"
       >
-        <div dir="rtl" class="lg:max-w-[612px] space-y-[20px] pr-20">
+        <!-- <div dir="rtl" class="lg:max-w-[612px] space-y-[20px] pr-20"> -->
+        <div
+          dir="rtl"
+          class="lg:max-w-[612px] space-y-[20px] lg:pr-[80px] px-[30px]"
+        >
           <h2 class="lg:text-[25px] text-[20px] font-[800] text-white">
             تیم ما
           </h2>
@@ -1142,66 +1221,104 @@
         <div
           class="lg:max-w-[1212px] max-w-[333px] lg:w-full divide-y-[1px] divide-dashed divide-[#424242]"
         >
-          <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-            <button
-              class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[785px] gap-[44px]"
-            >
-              <img src="../public/Polygon.png" />
-              <p class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right">
-                برای دریافت درگاه باید در کشور خارجی شرکت ثبت کنم ؟
-              </p>
-            </button>
+          <div class="qna-item flex flex-col">
+            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
+              <button
+                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[785px] gap-[44px]"
+              >
+                <img src="../public/Polygon.png" />
+                <p
+                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
+                >
+                  برای دریافت درگاه باید در کشور خارجی شرکت ثبت کنم ؟
+                </p>
+              </button>
+            </div>
+            <div class="expandable-content self-end">
+              <p class="text-white">abcdefg</p>
+            </div>
           </div>
 
-          <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-            <button
-              class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[385px] gap-[40px]"
-            >
-              <img src="../public/Polygon.png" />
-              <p class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right">
-                آیا درگاه پرداخت بین المللی برای دریافت و پرداخت درون برنامه ای
-                در گوگل پی و اپ استور هم کاربرد دارد؟
-              </p>
-            </button>
+          <div class="qna-item flex flex-col">
+            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
+              <button
+                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[385px] gap-[40px]"
+              >
+                <img src="../public/Polygon.png" />
+                <p
+                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
+                >
+                  آیا درگاه پرداخت بین المللی برای دریافت و پرداخت درون برنامه
+                  ای در گوگل پی و اپ استور هم کاربرد دارد؟
+                </p>
+              </button>
+            </div>
+            <div class="expandable-content self-end">
+              <p class="text-white">abcdefg</p>
+            </div>
           </div>
 
-          <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-            <button
-              class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[40px]"
-            >
-              <img src="../public/Polygon.png" />
-              <p class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right">
-                چگونه می توانم بر تراکنش ها و خریدهای انجام شده توسط مشتریانم
-                نظارت داشته باشم؟
-              </p>
-            </button>
+          <div class="qna-item flex flex-col">
+            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
+              <button
+                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[40px]"
+              >
+                <img src="../public/Polygon.png" />
+                <p
+                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
+                >
+                  چگونه می توانم بر تراکنش ها و خریدهای انجام شده توسط مشتریانم
+                  نظارت داشته باشم؟
+                </p>
+              </button>
+            </div>
+            <div class="expandable-content self-end">
+              <p class="text-white">abcdefg</p>
+            </div>
           </div>
 
-          <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-            <button
-              class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[40px]"
-            >
-              <img src="../public/Polygon.png" />
-              <p class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right">
-                آیا امکان کسر از حساب به صورت خودکار وجود دارد ؟
-              </p>
-            </button>
+          <div class="qna-item flex flex-col">
+            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
+              <button
+                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[40px]"
+              >
+                <img src="../public/Polygon.png" />
+                <p
+                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
+                >
+                  آیا امکان کسر از حساب به صورت خودکار وجود دارد ؟
+                </p>
+              </button>
+            </div>
+            <div class="expandable-content self-end">
+              <p class="text-white">abcdefg</p>
+            </div>
           </div>
 
-          <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
-            <button
-              class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[100px]"
-            >
-              <img src="../public/Polygon.png" />
-              <p class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right">
-                برای کش بک ها آیا مقداری کم میکنید؟
-              </p>
-            </button>
+          <div class="qna-item flex flex-col">
+            <div class="flex lg:pt-[30px] lg:pb-[20px] py-[20px]">
+              <button
+                class="flex items-center justify-between lg:max-w-[1212px] lg:w-full lg:gap-[485px] gap-[100px]"
+              >
+                <img src="../public/Polygon.png" />
+                <p
+                  class="text-[#D4D4D4] lg:text-[18px] teext-[14px] text-right"
+                >
+                  برای کش بک ها آیا مقداری کم میکنید؟
+                </p>
+              </button>
+            </div>
+            <div class="expandable-content self-end">
+              <p class="text-white">abcdefg</p>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="flex flex-col items-center lg:mt-[130px] mt-[105px]">
+    <footer
+      class="flex flex-col items-center lg:mt-[130px] mt-[105px] relative overflow-hidden"
+    >
+      <div class="footer-radial"></div>
       <div
         class="lg:max-w-[1212px] max-w-[333px] w-full border-t-[1px] border-[#424242] flex-col divide-[1px] divide-[#365153] flex"
       >
@@ -1266,142 +1383,76 @@
       </div>
     </footer>
   </body>
-</html>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
 
-    const element = document.querySelector("#image-container");
-    observer.observe(element);
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll(".lozi-container");
-    elements.forEach((element) => {
+      const element = document.querySelector("#image-container");
       observer.observe(element);
     });
-  });
-</script>
+  </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("radar-container-animate");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
 
-    const element = document.querySelector("#radar-mobile-container");
-    observer.observe(element);
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const rangeSlider = document.getElementById("range-slider");
-    const percentageDisplay = document.getElementById("percentage-display");
-    const percentageItems = percentageDisplay.querySelectorAll("p");
-    const kilomeeterContainer = document.getElementById("kiloo-meter");
-
-    document;
-
-    kilomeeterContainer.addEventListener("mouseover", () => {
-      let startValue = 0;
-      const endValue = 40;
-      const duration = 1000; // 1 second
-      const startTime = performance.now();
-
-      function animate() {
-        const elapsed = performance.now() - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-
-        const currentValue = startValue + (endValue - startValue) * progress;
-        rangeSlider.value = currentValue * 2.5;
-
-        const scrollPosition =
-          ((percentageDisplay.scrollHeight / percentageItems.length) *
-            currentValue) /
-          5;
-        percentageDisplay.scrollTop = scrollPosition;
-
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      }
-
-      requestAnimationFrame(animate);
+      const elements = document.querySelectorAll(".lozi-container");
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
     });
+  </script>
 
-    document;
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("radar-container-animate");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
 
-    kilomeeterContainer.addEventListener("mouseleave", () => {
-      let startValue = 40;
-      const endValue = 0;
-      const duration = 1000; // 1 second
-      const startTime = performance.now();
-
-      function animate() {
-        const elapsed = performance.now() - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-
-        const currentValue = startValue + (endValue - startValue) * progress;
-        rangeSlider.value = currentValue * 2.5;
-
-        const scrollPosition =
-          ((percentageDisplay.scrollHeight / percentageItems.length) *
-            currentValue) /
-          5;
-        percentageDisplay.scrollTop = scrollPosition;
-
-        if (progress < 1) {
-          requestAnimationFrame(animate);
-        }
-      }
-
-      requestAnimationFrame(animate);
+      const element = document.querySelector("#radar-mobile-container");
+      observer.observe(element);
     });
-  });
-</script>
+  </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    function initializeObserver() {
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
       const rangeSlider = document.getElementById("range-slider");
       const percentageDisplay = document.getElementById("percentage-display");
       const percentageItems = percentageDisplay.querySelectorAll("p");
-      const kilooMeterContainer = document.getElementById("kiloo-meter");
-      const grayImage = document.querySelector(".kilometer-bg");
-      const colorImage = document.querySelector(".kilometer-fg");
+      const kilomeeterContainer = document.getElementById("kiloo-meter");
 
-      function animateScroll(startValue, endValue, duration) {
+      document;
+
+      kilomeeterContainer.addEventListener("mouseover", () => {
+        let startValue = 0;
+        const endValue = 40;
+        const duration = 1000; // 1 second
         const startTime = performance.now();
 
         function animate() {
@@ -1423,136 +1474,255 @@
         }
 
         requestAnimationFrame(animate);
-      }
+      });
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animateScroll(0, 40, 1000); // Start animation when in view
-              grayImage.classList.add("visible");
-              colorImage.classList.add("visible");
-            } else {
-              animateScroll(40, 0, 1000); // Reverse animation when out of view
-              grayImage.classList.remove("visible");
-              colorImage.classList.remove("visible");
-            }
-          });
-        },
-        {
-          threshold: 0.5, // Adjust as needed
+      document;
+
+      kilomeeterContainer.addEventListener("mouseleave", () => {
+        let startValue = 40;
+        const endValue = 0;
+        const duration = 1000; // 1 second
+        const startTime = performance.now();
+
+        function animate() {
+          const elapsed = performance.now() - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          const currentValue = startValue + (endValue - startValue) * progress;
+          rangeSlider.value = currentValue * 2.5;
+
+          const scrollPosition =
+            ((percentageDisplay.scrollHeight / percentageItems.length) *
+              currentValue) /
+            5;
+          percentageDisplay.scrollTop = scrollPosition;
+
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          }
         }
-      );
 
-      observer.observe(kilooMeterContainer);
-    }
+        requestAnimationFrame(animate);
+      });
+    });
+  </script>
 
-    function checkViewportAndInitialize() {
-      if (window.innerWidth < 1024) {
-        initializeObserver();
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function initializeObserver() {
+        const rangeSlider = document.getElementById("range-slider");
+        const percentageDisplay = document.getElementById("percentage-display");
+        const percentageItems = percentageDisplay.querySelectorAll("p");
+        const kilooMeterContainer = document.getElementById("kiloo-meter");
+        const grayImage = document.querySelector(".kilometer-bg");
+        const colorImage = document.querySelector(".kilometer-fg");
+
+        function animateScroll(startValue, endValue, duration) {
+          const startTime = performance.now();
+
+          function animate() {
+            const elapsed = performance.now() - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            const currentValue =
+              startValue + (endValue - startValue) * progress;
+            rangeSlider.value = currentValue * 2.5;
+
+            const scrollPosition =
+              ((percentageDisplay.scrollHeight / percentageItems.length) *
+                currentValue) /
+              5;
+            percentageDisplay.scrollTop = scrollPosition;
+
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            }
+          }
+
+          requestAnimationFrame(animate);
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateScroll(0, 40, 1000); // Start animation when in view
+                grayImage.classList.add("visible");
+                colorImage.classList.add("visible");
+              } else {
+                animateScroll(40, 0, 1000); // Reverse animation when out of view
+                grayImage.classList.remove("visible");
+                colorImage.classList.remove("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.5, // Adjust as needed
+          }
+        );
+
+        observer.observe(kilooMeterContainer);
       }
-    }
 
-    checkViewportAndInitialize();
-
-    window.addEventListener("resize", function () {
-      if (window.innerWidth < 1024) {
-        if (!document.kilooMeterObserverInitialized) {
+      function checkViewportAndInitialize() {
+        if (window.innerWidth < 1024) {
           initializeObserver();
-          document.kilooMeterObserverInitialized = true;
         }
-      } else {
-        document.kilooMeterObserverInitialized = false;
       }
-    });
-  });
-</script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    function handleImageOpacity() {
-      const defaultImage = document.querySelector(".default-image");
-      const colorfulImage = document.querySelector(".colorful-image");
+      checkViewportAndInitialize();
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting && window.innerWidth < 1024) {
-              defaultImage.style.opacity = "0";
-              colorfulImage.style.opacity = "1";
-            } else {
-              defaultImage.style.opacity = "1";
-              colorfulImage.style.opacity = "0";
-            }
-          });
-        },
-        {
-          threshold: 0.5, // Adjust as needed
-        }
-      );
-
-      const imageContainer = document.getElementById("shabake-image");
-      observer.observe(imageContainer);
-    }
-
-    function checkViewportAndHandleOpacity() {
-      if (window.innerWidth < 1024) {
-        handleImageOpacity();
-      }
-    }
-
-    checkViewportAndHandleOpacity();
-
-    window.addEventListener("resize", function () {
-      if (window.innerWidth < 1024) {
-        checkViewportAndHandleOpacity();
-      }
-    });
-  });
-</script>
-
-<script src="./js/imageSlider.js"></script>
-<script src="./js/teamSlider.js"></script>
-<script src="./js/form-line.js"></script>
-<script src="./js/form-card-1.js"></script>
-<script src="./js/from-car-2.js"></script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const graySolo = document.querySelector(
-      'img[src="../public/dastgah-pose-gray-solo.png"]'
-    );
-    const zardePose = document.querySelector(
-      'img[src="../public/zamine-zarde-dastgah-pose.png"]'
-    );
-    const zardeSolo = document.querySelector(
-      'img[src="../public/dastgah-pose-zarde-solo.png"]'
-    );
-
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.1,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && window.innerWidth < 1024) {
-          graySolo.classList.add(
-            "opacity-0",
-            "translate-x-[10px]",
-            "-translate-y-[10px]"
-          );
-          zardePose.classList.add("opacity-100");
-          zardeSolo.classList.add("opacity-100");
+      window.addEventListener("resize", function () {
+        if (window.innerWidth < 1024) {
+          if (!document.kilooMeterObserverInitialized) {
+            initializeObserver();
+            document.kilooMeterObserverInitialized = true;
+          }
         } else {
-          graySolo.classList.remove("opacity-0", "-translate-y-[20px]");
-          zardePose.classList.remove("opacity-100");
-          zardeSolo.classList.remove("opacity-100");
+          document.kilooMeterObserverInitialized = false;
         }
       });
-    }, observerOptions);
+    });
+  </script>
 
-    observer.observe(graySolo);
-  });
-</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function handleImageOpacity() {
+        const defaultImage = document.querySelector(".default-image");
+        const colorfulImage = document.querySelector(".colorful-image");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting && window.innerWidth < 1024) {
+                defaultImage.style.opacity = "0";
+                colorfulImage.style.opacity = "1";
+              } else {
+                defaultImage.style.opacity = "1";
+                colorfulImage.style.opacity = "0";
+              }
+            });
+          },
+          {
+            threshold: 0.5, // Adjust as needed
+          }
+        );
+
+        const imageContainer = document.getElementById("shabake-image");
+        observer.observe(imageContainer);
+      }
+
+      function checkViewportAndHandleOpacity() {
+        if (window.innerWidth < 1024) {
+          handleImageOpacity();
+        }
+      }
+
+      checkViewportAndHandleOpacity();
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth < 1024) {
+          checkViewportAndHandleOpacity();
+        }
+      });
+    });
+  </script>
+
+  <script src="./js/imageSlider.js"></script>
+  <script src="./js/teamSlider.js"></script>
+  <script src="./js/form-line.js"></script>
+  <script src="./js/form-card-1.js"></script>
+  <script src="./js/from-car-2.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const graySolo = document.querySelector(
+        'img[src="../public/dastgah-pose-gray-solo.png"]'
+      );
+      const zardePose = document.querySelector(
+        'img[src="../public/zamine-zarde-dastgah-pose.png"]'
+      );
+      const zardeSolo = document.querySelector(
+        'img[src="../public/dastgah-pose-zarde-solo.png"]'
+      );
+
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && window.innerWidth < 1024) {
+            graySolo.classList.add(
+              "opacity-0",
+              "translate-x-[10px]",
+              "-translate-y-[10px]"
+            );
+            zardePose.classList.add("opacity-100");
+            zardeSolo.classList.add("opacity-100");
+          } else {
+            graySolo.classList.remove("opacity-0", "-translate-y-[20px]");
+            zardePose.classList.remove("opacity-100");
+            zardeSolo.classList.remove("opacity-100");
+          }
+        });
+      }, observerOptions);
+
+      observer.observe(graySolo);
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const qnaItems = document.querySelectorAll(".qna-item");
+
+      qnaItems.forEach((item) => {
+        const button = item.querySelector("button");
+        const expandableContent = item.querySelector(".expandable-content");
+
+        button.addEventListener("click", () => {
+          expandableContent.classList.toggle("open");
+        });
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const parentContainer = document.getElementById("locations-parent");
+      const images = parentContainer.querySelectorAll("img");
+
+      const handleIntersection = (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            images.forEach((img) => {
+              img.style.transition = "opacity 300ms ease-in-out";
+              img.style.opacity = "1";
+            });
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(handleIntersection, {
+        threshold: 0.5, // Adjust as needed
+      });
+
+      if (window.innerWidth < 1024) {
+        observer.observe(parentContainer);
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth < 1024) {
+          observer.observe(parentContainer);
+        } else {
+          observer.unobserve(parentContainer);
+          images.forEach((img) => {
+            img.style.opacity = "0";
+          });
+        }
+      });
+    });
+  </script>
+</html>
